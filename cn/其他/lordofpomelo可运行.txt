@@ -1,0 +1,3 @@
+github: https://github.com/NextZeus/lordofpomelo
+
+一直有人在说老版本有问题，却没有人去改这个bug。 就是几个第三方库的版本更新导致的，通过解决这个bug，也是一个学习的过程
