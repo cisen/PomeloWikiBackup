@@ -1,0 +1,44 @@
+{
+    "apps": [
+        {
+            "name": "masterdev110",
+            "cwd": "F:\\develop\\logicServer/game-server/",
+            "script": "index.js",
+            "args": "mode=stand-alone",
+            "node_args": "--harmony",
+            "exec_mode": "fork_mode"
+        },
+        {
+            "name": "connector-server-1",
+            "cwd": "F:\\develop\\logicServer/game-server/",
+            "script": "index.js",
+            "args": "env=development  id=connector-server-1  host=127.0.0.1  port=3150  clientHost=192.168.1.10  clientPort=3010  frontend=true  serverType=connector ",
+            "node_args": "  --inspect=0.0.0.0:10001",
+            "exec_mode": "fork_mode"
+        },
+        {
+            "name": "main-server-1",
+            "cwd": "F:\\develop\\logicServer/game-server/",
+            "script": "index.js",
+            "args": "env=development  id=main-server-1  host=127.0.0.1  port=5100  serverType=main ",
+            "node_args": "  --inspect=0.0.0.0:10003",
+            "exec_mode": "fork_mode"
+        },
+        {
+            "name": "admin-server",
+            "cwd": "F:\\develop\\logicServer/game-server/",
+            "script": "index.js",
+            "args": "env=development  id=admin-server  host=127.0.0.1  port=6100  serverType=admin ",
+            "node_args": "  --inspect=0.0.0.0:10030",
+            "exec_mode": "fork_mode"
+        },
+        {
+            "name": "purchase-server",
+            "cwd": "F:\\develop\\logicServer/game-server/",
+            "script": "index.js",
+            "args": "env=development  id=purchase-server  host=127.0.0.1  port=7100  serverType=purchase ",
+            "node_args": "  --inspect=0.0.0.0:10040",
+            "exec_mode": "fork_mode"
+        }
+    ]
+}
